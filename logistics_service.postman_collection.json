@@ -1,0 +1,120 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DM107",
+		"_postman_id": "f4cba3d9-5599-2889-cf45-57e8872b95e6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "JAVA GET",
+			"request": {
+				"url": "http://localhost:8080/logisticsService/api/v1/delivery/order/222",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amdpbHNvbjptYXN0ZXI=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "JAVA POST",
+			"request": {
+				"url": "http://localhost:8080/logisticsService/api/v1/delivery",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic amdpbHNvbjptYXN0ZXI=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 0,\n    \"order\": 90,\n    \"userId\": 1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PHP DELETE",
+			"request": {
+				"url": "http://localhost/logisticsService/src/public/api/delivery/3",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amdpbHNvbjptYXN0ZXI=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PHP PUT",
+			"request": {
+				"url": "http://localhost/logisticsService/src/public/api/delivery/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic amdpbHNvbjptYXN0ZXI=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"receiverName\": \"Daniela Edvania\",\n    \"receiverCpf\": \"083.441.344.-4\",\n    \"dateTime\": \"2017-11-07 15:19:20\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PHP POST USER",
+			"request": {
+				"url": "http://localhost/logisticsService/src/public/api/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic amdpbHNvbjptYXN0ZXI=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"daniela\",\n    \"password\": \"master\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
